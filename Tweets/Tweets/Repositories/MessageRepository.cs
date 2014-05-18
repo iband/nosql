@@ -78,7 +78,7 @@ namespace Tweets.Repositories
                     {
                         {"userName", "$userName"},
                         {"_id", "$_id"},
-                        {"text", "text"},
+                        {"text", "$text"},
                         {"createDate", "$createDate"}
                     }
                 }
