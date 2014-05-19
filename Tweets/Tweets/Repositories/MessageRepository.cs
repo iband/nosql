@@ -78,7 +78,7 @@ namespace Tweets.Repositories
                     {
                         {"userName", "$userName"},
                         {"_id", "$_id"},
-                        {"text", "$text"},
+                        {"text", "text"},
                         {"createDate", "$createDate"}
                     }
                 }
@@ -91,7 +91,7 @@ namespace Tweets.Repositories
                     return new Message
                     {
                         Id = msg.Id,
-                        User = new User {Name = msg.UserName},
+                        User = new User { Name = msg.UserName },
                         Text = msg.Text,
                         Likes = likeNum,
                         CreateDate = msg.CreateDate,
